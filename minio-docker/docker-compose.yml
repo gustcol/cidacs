@@ -2,6 +2,7 @@ version: '2'
 
 services:
   minio:
+    network_mode: host
     container_name: Minio
     command: server /data --console-address ":9001"
     environment:

@@ -22,14 +22,14 @@ chmod +x /root/free_cache.sh
 
 cat << EOF >> /etc/security/limits.conf
 
-*         	soft nproc 4000000
-*         	hard nproc 4000000
-*         	soft nofile 4000000
-*         	hard nofile 4000000
-root   	soft nproc 4000000
-root   	hard nproc 4000000
-root   	soft nofile 4000000
-root   	hard nofile 4000000
+*         	soft nproc 40000
+*         	hard nproc 40000
+*         	soft nofile 40000
+*         	hard nofile 40000
+root   	soft nproc 40000
+root   	hard nproc 40000
+root   	soft nofile 40000
+root   	hard nofile 40000
 EOF
 
 ulimit -n 65536
