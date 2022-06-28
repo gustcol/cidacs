@@ -8,8 +8,8 @@ docker-compose down
 
 cd ../minio-docker
 docker-compose down 
-rm -rf  data/minio
+sudo rm -rf  data/minio
 
-cd ../spark-cluster-on-docker
+cd ../spark-cluster-on-docker-jupyterlab
 docker-compose down
 

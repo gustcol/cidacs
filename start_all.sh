@@ -8,5 +8,5 @@ docker-compose up -d
 cd ../minio-docker
 docker-compose up -d 
 
-cd ../spark-cluster-on-docker
+cd ../spark-cluster-on-docker-jupyterlab
 ./build.sh

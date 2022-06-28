@@ -1,7 +1,3 @@
-#!/bin/bash -xe
-set -euxo pipefail
-docker system prune --all --force
-
 # -- Software Stack Version
 
 SPARK_VERSION="3.2.1"
@@ -34,5 +30,4 @@ docker build \
   -f jupyterlab.Dockerfile \
   -t jupyterlab .
 
-
-  docker-compose up -d
+docker-compose up -d

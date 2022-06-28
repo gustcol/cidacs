@@ -5,7 +5,6 @@ volumes:
     driver: local
 services:
   jupyterlab:
-    network_mode: host
     image: jupyterlab
     container_name: jupyterlab
     ports:
@@ -13,7 +12,6 @@ services:
     volumes:
       - shared-workspace:/opt/workspace
   spark-master:
-    network_mode: host
     image: spark-master
     container_name: spark-master
     ports:
@@ -22,7 +20,6 @@ services:
     volumes:
       - shared-workspace:/opt/workspace
   spark-worker-1:
-    network_mode: host
     image: spark-worker
     container_name: spark-worker-1
     environment:
@@ -35,7 +32,6 @@ services:
     depends_on:
       - spark-master
   spark-worker-2:
-    network_mode: host
     image: spark-worker
     container_name: spark-worker-2
     environment:
@@ -48,7 +44,6 @@ services:
     depends_on:
       - spark-master
   spark-worker-3:
-    network_mode: host
     image: spark-worker
     container_name: spark-worker-3
     environment:
@@ -61,7 +56,6 @@ services:
     depends_on:
       - spark-master
   spark-worker-4:
-    network_mode: host
     image: spark-worker
     container_name: spark-worker-4
     environment:
@@ -74,7 +68,6 @@ services:
     depends_on:
       - spark-master
   spark-worker-5:
-    network_mode: host
     image: spark-worker
     container_name: spark-worker-5
     environment:
