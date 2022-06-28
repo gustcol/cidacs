@@ -2,9 +2,9 @@
 set -euxo pipefail
 docker system prune --all --force
 
-cd elasticsearch-docker
+cd docker-elk
 docker-compose down
-rm -rf data/elasticsearch/nodes
+#rm -rf data/elasticsearch/nodes
 
 cd ../minio-docker
 docker-compose down 

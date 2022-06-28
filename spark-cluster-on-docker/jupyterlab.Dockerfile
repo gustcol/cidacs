@@ -11,6 +11,6 @@ RUN apt-get update -y && \
 
 # -- Runtime
 
-EXPOSE 8888
+EXPOSE 5555
 WORKDIR ${SHARED_WORKSPACE}
-CMD jupyter lab --ip=0.0.0.0 --port=8888 --no-browser --allow-root --NotebookApp.token=
+CMD jupyter lab --ip=0.0.0.0 --port=5555 --no-browser --allow-root --NotebookApp.token=

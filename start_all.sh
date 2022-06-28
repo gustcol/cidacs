@@ -2,7 +2,7 @@
 set -euxo pipefail
 docker system prune --all --force
 
-cd elasticsearch-docker
+cd docker-elk
 docker-compose up -d
 
 cd ../minio-docker
